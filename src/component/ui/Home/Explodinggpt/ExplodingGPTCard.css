@@ -1,0 +1,36 @@
+.exploding-gpt-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  .button{
+    width:159px;
+
+  }
+  .customclassName{
+  }
+  .exploding-gpt-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .exploding-gpt-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .exploding-gpt-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  

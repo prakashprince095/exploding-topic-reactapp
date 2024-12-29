@@ -1,0 +1,28 @@
+.exploding-gpt-container {
+    text-align: center;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .exploding-gpt-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .exploding-gpt-container h2 span {
+    color: #007bff;
+  }
+  
+  .exploding-gpt-container p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .exploding-gpt-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  

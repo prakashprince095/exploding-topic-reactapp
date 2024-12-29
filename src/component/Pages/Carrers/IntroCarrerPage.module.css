@@ -1,0 +1,76 @@
+/* Container */
+/* .mainConatiner{
+  width: 80%;
+  margin: auto;
+} */
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.emoji {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  margin-top: 10px;
+}
+
+/* Why Work With Us Section */
+.whySection {
+  background: linear-gradient(135deg, #4f81d9, #84a9f9);
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+.whyHeading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.featureDescription {
+  font-size: 0.9rem;
+  color: #e0e7ff;
+}

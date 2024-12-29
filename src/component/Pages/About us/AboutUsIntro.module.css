@@ -1,0 +1,26 @@
+.introcontainerintrocontainer {
+  border: 1px solid #e0e0e0; /* Optional border for visibility */
+
+  margin-top: 30px;
+  gap: 20px; /* Adds 20px vertical spacing between child divs */
+  margin-bottom: 20px; /* Adds 20px space below the container */
+  border-top: 0.5px solid #676666; /* Top border */
+  border-bottom: 0.5px solid #676666; /* Bottom border */ /* Bottom border */
+}
+.featureCard {
+  /* background-color: aqua; */
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.heading {
+  margin: auto; /* Ensures the element itself is centered within its container */
+  text-align: center;
+}
+.heading > * {
+  display: block; /* Ensures the child elements are on separate lines */
+  margin: 0 auto; /* Centers the block element horizontally */
+}

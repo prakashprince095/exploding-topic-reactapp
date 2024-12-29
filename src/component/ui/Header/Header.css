@@ -1,0 +1,92 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .third {
+  display: flex; /* Enable Flexbox */
+  justify-content: space-between; /* Equal spacing between the buttons */
+  align-items: center; /* Align items vertically */
+  padding: 10px; /* Optional: Add some padding around the container */
+  gap: 10px; /* Optional: Control the spacing between items if needed */
+}
+
+button {
+  padding: 10px 20px; /* Optional: Style buttons for consistency */
+}
+
+  /* Header container styling */
+  .header {
+    justify-content: space-evenly;
+
+    display: flex;
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #e5e7eb;
+    position: relative;
+    z-index: 10; /* Ensures the header appears above other content */
+  }
+  
+  /* Navbar and list styling */
+  .navbar {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .nav-item {
+    position: relative; /* Parent for dropdown positioning */
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #007bff; /* Change link color on hover */
+  }
+  
+  /* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    top: 100%; /* Aligns right below the nav-link */
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Total width of dropdown */
+    display: flex;
+    flex-wrap: wrap; /* Allow content to wrap to a new line */
+    padding: 0.5rem 0;
+    z-index: 1000;
+  }
+  
+  /* Dropdown menu items */
+  .dropdown-menu a {
+    flex: 1 1 50%; /* Each item takes 50% width */
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333333;
+    box-sizing: border-box; /* Ensures padding doesn't break the 50% width */
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f1f5f9;
+    color: #007bff;
+  }
+  .logoImage{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }

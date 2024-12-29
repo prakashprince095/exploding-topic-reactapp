@@ -1,0 +1,97 @@
+/* MetaTrendsPage.css */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+}
+.volume-custom-className {
+  /* background-color: #050a05;
+  color: #f0f6f1; */
+}
+.growth-custom-className {
+  /* background-color: #090e09;
+  color: white; */
+}
+.meta-trends-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.meta-trends-page h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.meta-trends-page h2 {
+  font-size: 1.8rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.card-footer .volume {
+  font-weight: bold;
+}
+
+.card-footer .growth {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.show-more {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.show-more:hover {
+  background-color: #0056b3;
+}

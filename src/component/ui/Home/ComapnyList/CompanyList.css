@@ -1,0 +1,39 @@
+/* Center the entire component */
+.company-list-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa; /* Optional: Light background */
+  }
+  
+  /* Header styling */
+  .company-list-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #212529; /* Dark text color */
+  }
+  
+  /* Flexbox for logo alignment */
+  .company-list-logos {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Handle responsiveness */
+    gap: 20px; /* Space between items */
+  }
+  
+  /* Individual logos styling */
+  .company-list-logos img {
+    max-width: 100px; /* Limit the logo size */
+    height: auto;
+    object-fit: contain;
+    background: transparent; /* Ensure the image background is transparent */
+    border: none; /* Remove any border */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+  }
+  
+  .company-list-logos img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  

@@ -1,0 +1,86 @@
+/* General styles for the dashboard layout */
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.sidebar-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: var(--base-clr);
+  padding: 15px;
+  box-sizing: border-box;
+  border-right: 1px solid var(--line-clr);
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-item {
+  padding: 10px 15px;
+  color: var(--text-clr);
+  cursor: pointer;
+  border-radius: 0.5em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Apply the blue background for the active menu item */
+.sidebar-item.active {
+  background-color: #007bff;  /* Blue background for active menu item */
+  color: white;  /* White text color for the active item */
+}
+
+/* On hover, change background to a lighter color */
+.sidebar-item:hover {
+  background-color: var(--hover-clr);
+  color: #5e63ff; /* Change text color to blue on hover */
+}
+
+.sidebar-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.main-content-container {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 20px; /* Margin between the sidebar and content */
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.main-content {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Make the layout responsive */
+@media (max-width: 800px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+
+  .sidebar-container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid var(--line-clr);
+  }
+
+  .main-content-container {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,55 @@
+/* Styles for the CTA Component with Animated Line Border */
+.card-container{
+    height: 60%;
+}
+.cta-buttons{
+    justify-content: space-evenly;
+
+}
+/* Container for the CTA Card */
+.cta-card {
+    justify-content: space-between; /* Distributes space evenly between items */
+    justify-content: space-evenly;
+
+    background-color: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 2rem; /* Padding inside the card */
+    text-align: center; /* Center the text */
+    width: 65%;
+    margin: 2rem auto; /* Center the card horizontally and add vertical spacing */
+    position: relative; /* Required for the animated border */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Prevent the animated border from spilling outside */
+  }
+  
+  /* Animated Border */
+  .cta-card::before {
+    content: ""; /* Pseudo-element content */
+    position: absolute; /* Position relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    border-radius: 10px; /* Match container's border radius */
+    border: 2px solid transparent; /* Transparent border initially */
+    background: linear-gradient(white, white) padding-box, 
+                linear-gradient(90deg, #007bff, #6f42c1, #ffc107, #007bff) border-box;
+    animation: move-border 4s linear infinite; /* Apply the animation */
+    box-sizing: border-box; /* Include padding and border in dimensions */
+    z-index: -1; /* Place behind the content */
+  }
+  
+  /* Keyframes for Border Animation */
+  @keyframes move-border {
+    0% {
+      background: linear-gradient(white, white) padding-box, 
+                  linear-gradient(90deg, #007bff, #6f42c1, #ffc107, #007bff) border-box;
+    }
+    100% {
+      background: linear-gradient(white, white) padding-box, 
+                  linear-gradient(360deg, #007bff, #ffc107, #6f42c1, #007bff) border-box;
+    }
+  }
+  
+  /* Other styles (heading, paragraph, buttons) from the previous CSS remain unchanged */
+  

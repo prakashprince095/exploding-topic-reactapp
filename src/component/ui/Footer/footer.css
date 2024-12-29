@@ -1,0 +1,64 @@
+/* Target the container's children */
+a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Optional: Use the inherited text color */
+  }
+  
+  /* Remove bullet points from list items */
+  li {
+    list-style: none; /* Removes bullet points */
+  }
+  a:hover{
+    color: blue;
+  }
+  /* Ensure no margin or padding on the body or html */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Make sure body takes full height of the viewport */
+}
+
+.footer {
+  position: fixed; /* Fix the footer to the bottom of the page */
+  bottom: 0; /* Align it to the bottom */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Make the footer span the entire width */
+  background-color: #f9fafb; /* Background color */
+  padding: 1rem 0; /* Padding inside the footer */
+  font-size: 0.9rem; /* Font size */
+  color: #6b7280; /* Text color */
+  z-index: 10; /* Ensure footer stays above other content */
+}
+
+  
+  
+.footer-mainContainer {
+    justify-content: space-evenly;
+    bottom: 0; /* Aligns it to the bottom */
+    left: 0; /* Aligns it to the left edge */
+    width: 100%; /* Ensures full width */
+    justify-content: space-between; /* Distribute space between items */
+    display: flex; /* Use flexbox to organize children */
+    flex-direction: column; /* Each child will be in a new line */
+    gap: 1rem; /* Add spacing between the items */
+  }
+  
+  /* Add optional styling to align each container clearly */
+  .footer-mainContainer > * {
+    display: flex; /* Force each child to take a full line */
+    padding: 0.5rem 1rem; /* Add padding */
+    border: 1px solid #e0e0e0; /* Optional border for visibility */
+    background-color: #f9f9f9; /* Optional background for clarity */
+  }
+  .firstconatiner{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .trendsConatiner{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footerFirst{
+    justify-content: space-evenly;
+    display: flex;
+  }

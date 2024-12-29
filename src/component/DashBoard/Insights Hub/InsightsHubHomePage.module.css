@@ -1,0 +1,167 @@
+.headingconatiner {
+  display: flex;
+  justify-content: space-between; /* Distribute the content with space between */
+  align-items: center; /* Vertically align items to the center */
+  width: 100%; /* Ensure the container takes full width */
+  margin: auto;
+
+}
+
+.heading {
+       margin-left: -393px; 
+
+  font-size: 24px; /* Adjust font size as needed */
+  display: flex;
+  align-items: center; /* Align text and icon vertically */
+  gap: 10px; /* Space between icon and text */
+
+}
+
+.filtercontainer {
+  display: flex;
+  gap: 15px; /* Space between input box and dropdowns */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.inputbox {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.dropdown {
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.displaycount{
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 5px gray;
+
+}
+.count{
+  height: 150px;
+}
+/* Outer container */
+.outerContainer {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding: 20px;
+  background: #fff;
+}
+
+/* Inner container */
+.innerContainer {
+  width: 80%;
+  height: 80%;
+ 
+}
+
+/* Heading styles */
+.heading {
+  margin-bottom: 20px;
+}
+
+/* Content styles */
+.content {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.startupsButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.startupsButton:hover {
+  background-color: #0056b3;
+}
+
+/* Button styles */
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  position: absolute;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Position the button in the bottom-left of the inner container */
+.bottomLeft {
+  bottom: 10px;
+  left: 10px;
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 30%;
+  height: 40%;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Modal content */
+.modalContent {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Close button */
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #ff5e5e;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.closeBtn:hover {
+  background: #e33e3e;
+}
+.trendingheading {
+  position: absolute; /* Absolute positioning relative to the parent container */
+  top: 0; /* Aligns the element to the top of the container */
+  left: 0; /* Aligns the element to the left of the container */
+  margin-left: 5px; /* Optional: Adds a small left margin */
+  margin-top: 5px; /* Optional: Adds a small top margin */
+}
+

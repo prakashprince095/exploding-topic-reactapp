@@ -1,0 +1,22 @@
+.firstConatiner {
+  display: flex;
+}
+.graphContainer {
+  width: 55%;
+  max-width: 1200px;
+  margin: 20px auto;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+.thirdContainer{
+  
+}
+.fourthContainer{
+
+}
+.fifthContainer{
+
+}

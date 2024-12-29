@@ -1,0 +1,9 @@
+/* Custom className for the container */
+.custom-container {
+  display: flex; /* Use flexbox */
+  flex-grow: 1; /* Make the container take the remaining width */
+  overflow-x: hidden; /* Prevent overflow horizontally */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  padding: 20px; /* Add padding if needed */
+  box-sizing: border-box; /* Make sure padding is included in the width calculation */
+}

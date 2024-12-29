@@ -1,0 +1,64 @@
+.deepdive {
+  width: 80%;
+  margin: auto;
+  border: 1px solid #cacaca; /* Apply border here */
+  border-radius: 5px; /* Correctly apply the border-radius */
+}
+
+.img {
+  margin: auto;
+}
+.textcontainer {
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #cacaca; /* Apply border here */
+  border-radius: 5px; /* Correctly apply the border-radius */
+}
+.icon {
+  font-size: 36px; /* Increase the size as per your requirement */
+}
+.textContainerHeading {
+  display: flex; /* Enable Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align horizontally */
+  justify-content: center; /* Center align vertically (optional for full centering) */
+  text-align: center; /* Center text inside each item */
+  margin: auto; /* Center the container itself */
+  padding: 20px; /* Optional, for spacing around content */
+  width: 100%; /* Optional, to make the container take full width */
+  max-width: 600px; /* Optional, limit the container's width */
+}
+.customCardStyle {
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #d9d9d9;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.customCardStyle:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.discoverCompanies {
+  width: 80%;
+  margin: auto;
+}
+.industryInsights {
+  width: 80%;
+  margin: auto;
+}
+/* styles.css */
+.customCard {
+  width: 30%;
+  /* You may want to make sure it is responsive */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  padding: 16px;
+  margin: 8px;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  height: 600px;
+}

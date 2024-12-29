@@ -1,0 +1,23 @@
+.marquee {
+    display: flex;
+    white-space: nowrap;  /* Ensure items do not wrap */
+    overflow-x: hidden;   /* Hide the overflowing content */
+    width: 100%;          /* Full width */
+    animation: marquee 20s linear infinite;
+  }
+  
+  .marquee > * {
+    display: inline-block;
+    margin-right: 2rem;  /* Adjust spacing between items */
+  }
+  
+  /* Add the animation */
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);  /* Start at the right */
+    }
+    100% {
+      transform: translateX(-100%);  /* End at the left */
+    }
+  }
+  

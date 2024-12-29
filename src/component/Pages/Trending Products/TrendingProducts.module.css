@@ -1,0 +1,43 @@
+.graphinsights {
+  width: 80%; /* Sets the width of the container */
+  margin: auto; /* Centers the container horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Aligns children horizontally (center) */
+  align-items: center; /* Aligns children vertically (center) */
+  height: 100vh; /* Optional: Use full viewport height to center vertically */
+}
+.firstsection {
+  margin: auto;
+}
+.secondsection {
+  width: 80%; /* Sets the width of the container */
+  margin: auto; /* Centers the container horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Aligns children horizontally (center) */
+  align-items: center; /* Aligns children vertically (center) */
+  height: 100vh; /* Optional: Use full viewport height to center vertically */
+}
+.img2 {
+  width: 74%; /* Sets the width of the container */
+  margin: auto; /* Centers the container horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Aligns children horizontally (center) */
+  align-items: center; /* Aligns children vertically (center) */
+  height: 100vh; /* Optional: Use full viewport height to center vertically */
+  border: 1px solid rgb(192, 189, 189);
+  border-radius: 10px;
+}
+.img2heading {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Align items in a column (one per line) */
+  justify-content: center; /* Vertically center the items */
+  align-items: center; /* Horizontally center the items */
+  height: 100vh; /* Optional: Take full viewport height for vertical centering */
+}
+.img1heading {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Align items in a column (one per line) */
+  justify-content: center; /* Vertically center the items */
+  align-items: center; /* Horizontally center the items */
+  height: 100vh; /* Optional: Take full viewport height for vertical centering */
+}

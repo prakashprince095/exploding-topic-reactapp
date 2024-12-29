@@ -1,0 +1,12 @@
+.heading {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Aligns children elements in a vertical stack (separate lines) */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  margin: 10px;
+  height: 100%; /* Ensure the container has a height to center vertically */
+  margin-top: 30px;
+}
+.mainContainer {
+  margin: 10px 0; /* Adds vertical margin (top and bottom) with no horizontal margin */
+}

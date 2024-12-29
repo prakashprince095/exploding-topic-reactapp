@@ -1,0 +1,26 @@
+.container {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.cardList {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.seeMore {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.seeMore:hover {
+  background: #0056b3;
+}

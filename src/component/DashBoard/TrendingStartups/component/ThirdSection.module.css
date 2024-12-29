@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.section {
+  flex: 1;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.icon {
+  margin-right: 8px;
+}
+
+.indicators {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.indicatorRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 14px;
+  color: #555;
+}
+
+.levels {
+  display: flex;
+  gap: 5px;
+}
+
+.level {
+  padding: 5px 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #666;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: background-color 0.2s ease;
+}
+
+.level.active {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.level:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.channels {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.channelRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channelInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.channelIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.channelName {
+  font-size: 14px;
+  color: #555;
+}
+
+.channelBar {
+  flex: 1;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.channelProgress {
+  height: 100%;
+  background-color: #007bff;
+}
+
+.sideSection {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categories,
+.reports {
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.sideHeader {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  padding: 5px 10px;
+  border-radius: 15px;
+  background-color: #e0f3ff;
+  color: #007bff;
+  font-size: 12px;
+  font-weight: bold;
+}
