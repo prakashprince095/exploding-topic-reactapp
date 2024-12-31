@@ -15,10 +15,6 @@
     "@material-tailwind/react": "^2.1.10",
     "@reduxjs/toolkit": "^2.5.0",
     "bootstrap": "^5.3.3",
-<<<<<<< HEAD
-
-=======
->>>>>>> 92b799c5ff7930d3df6e73f257fcb00e796c144c
     "clsx": "^2.1.1",
     "framer-motion": "^11.15.0",
     "keen-slider": "^6.8.6",

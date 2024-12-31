@@ -1,13 +1,12 @@
 {
-    "compilerOptions": {
-      // ...
-      "baseUrl": ".",
-      "paths": {
-        "@/*": [
-          "./src/*"
-        ]
-      }
-      // ...
-    }
+  "compilerOptions": {
+    "baseUrl": ".", // Base directory for relative paths
+    "paths": {
+      "@/*": ["src/*"] // Alias '@' to the 'src' directory
+    },
+    "moduleResolution": "node", // Ensure proper resolution of modules (especially for node_modules)
+    "esModuleInterop": true, // Allow default imports from modules with no default export
+    "strict": true, // Enable strict type-checking options (optional but recommended)
+    "jsx": "react-jsx" // JSX support (use this if you're working with React)
   }
-  
+}
