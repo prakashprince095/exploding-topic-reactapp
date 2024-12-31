@@ -4,7 +4,7 @@ import "./CompanyList.css"; // Import the CSS file
 // Import logos
 import eylogo from "../../../../assets/CompanyLogo/eylogo.jpg";
 import googlelogo from "../../../../assets/CompanyLogo/googlelogo2.png";
-import ubs from "../../../../assets/CompanyLogo/UBS_logo.png";
+import ubs from "../../../../assets/CompanyLogo/UBS_Logo.png";
 import microsoftlogo from "../../../../assets/CompanyLogo/microsoftlogo4.png";
 import goldmansach from "../../../../assets/CompanyLogo/goldmansachlogo3.png";
 import jpmorgan from "../../../../assets/CompanyLogo/jpmorgan.png";
