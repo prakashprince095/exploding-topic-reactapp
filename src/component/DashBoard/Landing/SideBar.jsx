@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Sidebar.css"; // Assuming you have the styles in a separate CSS file
+import "./SideBar.css"; // Assuming you have the styles in a separate CSS file
 
 const HomePage = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
