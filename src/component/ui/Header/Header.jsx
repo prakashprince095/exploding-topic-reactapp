@@ -41,7 +41,7 @@ const Header = () => {
                   <a href="/inside-database">Insight Database</a>
                   <a href="/meta-wave">Meta Wave</a>
                   <a href="/deep-dive-analysis">Deep Dive Analysis</a>
-                  <a href="/reports-center">Reports Center</a>
+                  {/* <a href="/reports-center">Reports Center</a> */}
                 </div>
               )}
             </li>
@@ -59,7 +59,7 @@ const Header = () => {
                 <div className="dropdown-menu">
                   <a href="/changelogs">Chagelogs</a>
                   <a href="/blog">Blog</a>
-                  <a href="/support">Support</a>
+                  {/* <a href="/support">Support</a> */}
                   <a href="/aboutus">About Us </a>
 
                   <a href="/faqs">Faqs</a>
@@ -82,7 +82,7 @@ const Header = () => {
                 <div className="dropdown-menu">
                   <a href="/changelogs">Chagelogs</a>
                   <a href="/blog">Blog</a>
-                  <a href="/support">Support</a>
+                  {/* <a href="/support">Support</a> */}
                   <a href="/aboutus">About Us </a>
 
                   <a href="/faqs">Faqs</a>

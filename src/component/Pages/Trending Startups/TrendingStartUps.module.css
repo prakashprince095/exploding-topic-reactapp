@@ -1,0 +1,74 @@
+.graphinsights {
+  width: 80%; /* Sets the width of the container */
+  margin: auto; /* Centers the container horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Aligns children horizontally (center) */
+  align-items: center; /* Aligns children vertically (center) */
+  height: 30vh; /* Optional: Use full viewport height to center vertically */
+  transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition for both transform and width */
+}
+
+/* On hover, the div will scale up */
+.graphinsights:hover {
+  transform: scale(1.1); /* Enlarges the div by 10% */
+  width: 90%; /* Optionally, increase the width as well */
+}
+.graphinsights2 {
+  margin: auto; /* Centers the container horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Aligns children horizontally (center) */
+  align-items: center; /* Aligns children vertically (center) */
+  height: 30vh; /* Optional: Use full viewport height to center vertically */
+  transition: transform 0.3s ease, width 0.3s ease; /* Smooth transition for both transform and width */
+}
+
+/* On hover, the div will scale up */
+.graphinsights2:hover {
+  transform: scale(1.1); /* Enlarges the div by 10% */
+  width: 90%; /* Optionally, increase the width as well */
+}
+.img1 {
+  margin: auto;
+}
+.detailBar {
+  width: 80%;
+  margin: auto;
+}
+img {
+  margin: auto;
+  width: 80%;
+}
+/* Initial style for the card */
+/* Initial style for the card */
+.cardContainer {
+  width: 80%;
+  margin: auto;
+  justify-content: center;
+}
+/* Initial style for the card */
+/* Initial style for the card */
+
+.card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1); /* Enlarges the div by 10% */
+}
+.startupCard {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.imgIcon{
+  height: 42px;
+  width: 100px;
+}

@@ -1,0 +1,63 @@
+.textcontainer {
+  padding: 10px;
+  width: 80%;
+  margin: auto;
+  border: 1px solid #cacaca; /* Apply border here */
+  border-radius: 5px; /* Correctly apply the border-radius */
+}
+.img1heading {
+  display: flex; /* Enable flexbox layout */
+  flex-direction: column; /* Align items in a column (one per line) */
+  justify-content: center; /* Vertically center the items */
+  align-items: center; /* Horizontally center the items */
+  height: 100vh; /* Optional: Take full viewport height for vertical centering */
+}
+.graphinsights {
+  width: 80%; /* Sets the width of the container */
+  margin: auto; /* Centers the container horizontally */
+  display: flex; /* Enables flexbox layout */
+  justify-content: center; /* Aligns children horizontally (center) */
+  align-items: center; /* Aligns children vertically (center) */
+  height: 100vh; /* Optional: Use full viewport height to center vertically */
+}
+.headingContainer {
+  display: flex;
+  justify-content: center; /* Centers the child elements horizontally */
+  align-items: center; /* Centers the child elements vertically */
+  width: 80%; /* Sets the width of the container to 80% */
+  margin: auto; /* Auto margin for centering the container itself */
+  height: 40vh; /* Optional: to take full viewport height for vertical centering */
+  flex-direction: column; /* Ensures child elements are stacked vertically, can be omitted if horizontal layout is desired */
+}
+.secondsection {
+  /* width: 80%; */
+  margin: auto;
+}
+.customCardStyle {
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid #d9d9d9;
+  background-color: #fafafa;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.customCardStyle:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.customCard {
+  width: 30%;
+  /* You may want to make sure it is responsive */
+  box-sizing: border-box; /* Ensures padding and borders are included in the width */
+  padding: 16px;
+  margin: 8px;
+  background-color: #fafafa;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+  height: 600px;
+}
+.alignitem {
+  display: flex;
+  align-items: center;
+}

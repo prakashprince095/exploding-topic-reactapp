@@ -1,0 +1,131 @@
+/* Hover effect class */
+.hoverenlarge {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* On hover, enlarge the div slightly and add a shadow effect */
+.hoverenlarge:hover {
+  transform: scale(1.05); /* Slightly enlarge the div */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+/* Optionally, you can also target images within the div for zoom effect */
+.hoverenlarge:hover img {
+  transform: scale(1.1); /* Enlarge the image slightly */
+}
+
+.firstSection {
+  width: 80%;
+  margin: auto;
+}
+.secondSection {
+  width: 80%;
+  margin: auto;
+}
+.thirdContainer {
+  width: 80%;
+  margin: auto;
+}
+/* Styling for headingContainer */
+.headingContainer {
+  display: flex; /* Enable Flexbox layout */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  height: 30vh; /* Take full height of the viewport, optional */
+  text-align: center; /* Ensure all text is centered */
+  padding: 20px; /* Optional padding to give some space around */
+}
+
+/* Styling for child containers (e.g. h2, p tags) */
+.headingContainer h2,
+.headingContainer p {
+  margin: 0 0 15px 0; /* Optional margin to give space between elements */
+  width: 100%; /* Ensure the text takes full width and wraps properly */
+}
+
+/* Optional: Responsive design to adjust the content position on smaller screens */
+@media (max-width: 768px) {
+  .headingContainer {
+    padding: 15px;
+  }
+}
+
+/* main container holding all 6 child containers */
+.mainContent {
+  display: flex;
+  flex-wrap: wrap; /* Allows child containers to wrap to new lines */
+  gap: 10px; /* Adds 10px gap between child containers horizontally and vertically */
+  justify-content: space-between; /* Spreads out the containers horizontally with space in between */
+}
+
+.forth {
+  height: 335px;
+}
+.fifth {
+  height: 335px;
+}
+
+/* Parent container holding child elements */
+.headingContainer {
+  display: flex;
+  flex-wrap: wrap; /* Allows children to wrap to new lines */
+  gap: 10px; /* Optional: Adds space between child elements */
+  justify-content: space-between; /* Distributes child containers evenly with space in between */
+}
+
+/* Styling for each child container */
+.headingContainer .container {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for scaling and shadow effects */
+  transform: scale(1); /* Initial size (normal) */
+  flex: 1 1 calc(50% - 10px); /* Each container takes 50% width (2 per row), with space between */
+  box-sizing: border-box; /* Includes padding and border in width/height calculation */
+  height: 200px; /* Fixed height for each container (adjustable as needed) */
+  background-color: #f0f0f0; /* Placeholder background color */
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+/* Hover effect to enlarge the container */
+.headingContainer .container:hover {
+  transform: scale(1.05); /* Enlarge by 5% on hover */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2); /* Add a larger shadow when hovered */
+}
+.dataAnaliticSection {
+  padding-top: 20px;
+  width: 80%;
+  margin: auto;
+}
+.secondHeading {
+  margin-top: 30px;
+  /* margin-left: 1000px; */
+}
+.flexText {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+.keyMatrics{
+  margin: auto;
+}
+.hoverEffect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hoverEffect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.textcontent {
+  flex: 1; /* This ensures the text section takes half the container */
+  padding-right: 20px; /* Optional padding to give space between text and image */
+}
+
+.imagecontent {
+  flex: 1; /* This ensures the image section takes the other half */
+  display: flex;
+  justify-content: flex-end; /* Aligns the image to the right */
+}

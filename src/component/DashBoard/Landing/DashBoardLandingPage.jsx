@@ -17,7 +17,7 @@ const DashBoardLandingPage = () => {
     { label: "Deep Analysis", route: "/dashboard/deepanalysis" },
     { label: "Reports", route: "/dashboard/reports" },
     { label: "Profile", route: "/dashboard/profile" },
-    { label: "Help Center", route: "/dashboard/contactus" },
+    // { label: "Help Center", route: "/dashboard/contactus" },
     { label: "Details", route: "/dashboard/details" },
   ];
 

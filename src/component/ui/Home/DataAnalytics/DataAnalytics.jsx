@@ -47,6 +47,7 @@ const DataAnalytics = () => {
           <div className="connected-icon notion">📝</div>
         </div>
       </div>
+      <div></div>
     </div>
   );
 };
