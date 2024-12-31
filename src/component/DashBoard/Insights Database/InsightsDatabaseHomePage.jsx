@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import DatabaseContentDisplay from "./DatabaseContentDisplay"; // Child component
-import "./InsightsDatabaseHomePage.css"; // Styling file
+import "./insightsdatabaseHomePage.css"; // Styling file
 
 const industries = [
   {
