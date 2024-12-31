@@ -5,6 +5,13 @@ import tailwindcss from "tailwindcss";
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    target: "esnext",
+    outDir: "dist", // Ensure build output is correct
+  },
+  preview: {
+    port: 5000, // Optional: specify the port for preview
+  },
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

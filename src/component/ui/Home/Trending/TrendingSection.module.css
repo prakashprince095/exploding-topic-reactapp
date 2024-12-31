@@ -129,3 +129,6 @@
   display: flex;
   justify-content: flex-end; /* Aligns the image to the right */
 }
+.takeFullWidth{
+  width: 100%;
+}
