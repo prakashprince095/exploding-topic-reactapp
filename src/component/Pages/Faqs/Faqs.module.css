@@ -45,3 +45,12 @@
   margin-top: 0.5rem;
   color: #555;
 }
+.supportContainer {
+  width: 60vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 40vh; /* Container height */
+}

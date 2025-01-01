@@ -5,6 +5,7 @@ import Header from "@/component/ui/Header/Header";
 import styles from "./Faqs.module.css";
 import { useState } from "react";
 import FrequentQuestion from "./FrequentQuestion";
+import ContactForm from "./ContactForm";
 
 const faqData = {
   general: [
@@ -90,6 +91,11 @@ const faqData = {
 };
 
 const Faqs = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const changeState = () => {
+    console.log("the change state is status is being changed ");
+    setIsOpen(true);
+  };
   const [selectedTab, setSelectedTab] = useState("general");
   const [expandedQuestion, setExpandedQuestion] = useState(null);
 
@@ -108,6 +114,8 @@ const Faqs = () => {
       <div>
         <FrequentQuestion faqData={faqData}></FrequentQuestion>
       </div>
+
+      <ContactForm />
       <CTA></CTA>
       <Footer></Footer>
     </>
