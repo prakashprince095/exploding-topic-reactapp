@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css"; // Import the CSS file
 import logo from "../../../assets/logo.jpeg";
+import logo2 from "/Headerlogo.svg";
 const Header = () => {
   // State for toggling dropdown visibility
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -19,7 +20,7 @@ const Header = () => {
       <div className="first">
         <a href="/">
           {" "}
-          <img src={logo} alt="logo" className="logoImage"></img>
+          <img src={logo2} alt="logo" className="logoImage"></img>
         </a>
       </div>
       <div className="second">

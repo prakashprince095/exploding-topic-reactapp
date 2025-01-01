@@ -3,196 +3,110 @@ import CTA from "@/component/ui/Home/CTA/CTA";
 import HeroSection from "@/component/ui/Home/HeroSection/HeroSection";
 import Header from "@/component/ui/Header/Header";
 import styles from "./Faqs.module.css";
+import { useState } from "react";
+import FrequentQuestion from "./FrequentQuestion";
+
+const faqData = {
+  general: [
+    {
+      question: "What is this platform, and how does it work?",
+      answer:
+        "Our platform provides real-time insights into trending startups and products. Users can track industry innovations, save favorites, and analyze trends to make data-driven decisions.",
+    },
+    {
+      question: "Who can benefit from using this platform?",
+      answer:
+        "Entrepreneurs, investors, marketers, and e-commerce professionals looking to stay updated on industry trends, analyze data, and discover new opportunities.",
+    },
+    {
+      question: "Is this platform available worldwide?",
+      answer:
+        "Yes, our platform is accessible globally, providing insights into startups and products across various industries and regions.",
+    },
+    {
+      question: "How frequently is the data updated?",
+      answer:
+        "Data on our platform is updated in real-time to ensure you have the latest and most accurate information.",
+    },
+    {
+      question: "Can I access the platform on mobile devices?",
+      answer:
+        "Yes, the platform is fully optimized for desktops, tablets, and smartphones, ensuring seamless access wherever you are.",
+    },
+  ],
+  pricing: [
+    {
+      question: "What subscription plans are available?",
+      answer:
+        "We offer three plans: Free (Basic access to data and bookmarking tools), Pro (Advanced analytics and unlimited saved items), and Enterprise (Tailored solutions for teams and organizations).",
+    },
+    {
+      question: "Can I switch between plans?",
+      answer:
+        "Yes, you can upgrade or downgrade your plan at any time from your account settings.",
+    },
+    {
+      question: "Is there a free trial for premium plans?",
+      answer: "Yes, we offer a 7-day free trial for the Pro plan.",
+    },
+    {
+      question: "How do I cancel my subscription?",
+      answer:
+        "You can cancel your subscription through your account settings. Your premium features will remain active until the end of the billing period.",
+    },
+    {
+      question: "Are there discounts for annual subscriptions?",
+      answer:
+        "Yes, subscribing annually saves you up to 20% compared to monthly billing.",
+    },
+  ],
+  dashboard: [
+    {
+      question: "What is the dashboard, and what can I do there?",
+      answer:
+        "The dashboard is your personalized control center for accessing saved startups, products, and insights. It includes tools for trend analysis, bookmarking, and data visualization.",
+    },
+    {
+      question: "How do I save startups or products to my dashboard?",
+      answer:
+        "Click the save button on any startup or product listing, and it will automatically be added to your Insight Hub within the dashboard.",
+    },
+    {
+      question: "Can I organize saved items into categories?",
+      answer:
+        "Yes, the dashboard allows you to create custom folders or tags to organize saved startups and products.",
+    },
+    {
+      question: "Is there a limit to how many items I can save?",
+      answer:
+        "Free users have a limit of 20 saved items. Upgrading to a premium plan removes this restriction.",
+    },
+    {
+      question: "Does the dashboard provide insights on saved items?",
+      answer:
+        "Yes, the dashboard offers trend analysis, comparative data, and customizable charts for your saved startups and products.",
+    },
+  ],
+};
 
 const Faqs = () => {
+  const [selectedTab, setSelectedTab] = useState("general");
+  const [expandedQuestion, setExpandedQuestion] = useState(null);
+
+  const handleTabClick = (tab) => {
+    setSelectedTab(tab);
+    setExpandedQuestion(null); // Collapse any expanded question when switching tabs
+  };
+
+  const handleQuestionClick = (question) => {
+    setExpandedQuestion(question === expandedQuestion ? null : question);
+  };
   return (
     <>
       <Header></Header>
       <HeroSection></HeroSection>
-      <div className={styles.gaqsSection}>
-        <div dir="ltr" data-orientation="horizontal" className="mb-12">
-          <div
-            role="tablist"
-            aria-orientation="horizontal"
-            className="h-10 items-center justify-center rounded-md bg-muted p-1 text-muted-foreground grid w-full grid-cols-3 mx-auto mb-8"
-            tabIndex="0"
-            data-orientation="horizontal"
-            style={{ outline: "none" }}
-          >
-            <button
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="radix-:r3l:-content-general"
-              data-state="inactive"
-              id="radix-:r3l:-trigger-general"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
-              tabIndex="-1"
-              data-orientation="horizontal"
-              data-radix-collection-item=""
-            >
-              General
-            </button>
-            <button
-              type="button"
-              role="tab"
-              aria-selected="false"
-              aria-controls="radix-:r3l:-content-pricing"
-              data-state="inactive"
-              id="radix-:r3l:-trigger-pricing"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
-              tabIndex="-1"
-              data-orientation="horizontal"
-              data-radix-collection-item=""
-            >
-              Pricing
-            </button>
-            <button
-              type="button"
-              role="tab"
-              aria-selected="true"
-              aria-controls="radix-:r3l:-content-dashboard"
-              data-state="active"
-              id="radix-:r3l:-trigger-dashboard"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-sm px-3 py-1.5 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-foreground data-[state=active]:shadow-sm"
-              tabIndex="0"
-              data-orientation="horizontal"
-              data-radix-collection-item=""
-            >
-              Dashboard
-            </button>
-          </div>
-
-          <div
-            data-state="inactive"
-            data-orientation="horizontal"
-            role="tabpanel"
-            aria-labelledby="radix-:r3l:-trigger-general"
-            id="radix-:r3l:-content-general"
-            tabIndex="0"
-            className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            hidden
-            style={{}}
-          ></div>
-          <div
-            data-state="inactive"
-            data-orientation="horizontal"
-            role="tabpanel"
-            aria-labelledby="radix-:r3l:-trigger-pricing"
-            id="radix-:r3l:-content-pricing"
-            tabIndex="0"
-            className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-            hidden
-          ></div>
-          <div
-            data-state="active"
-            data-orientation="horizontal"
-            role="tabpanel"
-            aria-labelledby="radix-:r3l:-trigger-dashboard"
-            id="radix-:r3l:-content-dashboard"
-            tabIndex="0"
-            className="mt-2 ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-          >
-            <div className="">
-              <div className="mb-6">
-                <input
-                  className="flex rounded-md border border-input bg-background p-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-normal file:text-foreground placeholder:text-muted-foreground w-full"
-                  placeholder="Search FAQs..."
-                  type="search"
-                  value=""
-                />
-              </div>
-              <div className="w-full" data-orientation="vertical">
-                <div
-                  data-state="closed"
-                  data-orientation="vertical"
-                  className="border-b border-gray-200"
-                >
-                  <h3
-                    data-orientation="vertical"
-                    data-state="closed"
-                    className="flex"
-                  >
-                    <button
-                      type="button"
-                      aria-controls="radix-:r4i:"
-                      aria-expanded="false"
-                      data-state="closed"
-                      data-orientation="vertical"
-                      id="radix-:r4h:"
-                      className="flex flex-1 items-center justify-between font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180 py-4 text-left"
-                      data-radix-collection-item=""
-                    >
-                      <div className="flex items-center gap-3 sm:gap-4">
-                        <div className="flex-shrink-0 text-muted-foreground">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            className="lucide lucide-panels-top-left h-6 w-6 sm:h-8 sm:w-8 border p-1 sm:p-1.5 rounded-md border-gray-300"
-                          >
-                            <rect
-                              width="18"
-                              height="18"
-                              x="3"
-                              y="3"
-                              rx="2"
-                            ></rect>
-                            <path d="M3 9h18"></path>
-                            <path d="M9 21V9"></path>
-                          </svg>
-                        </div>
-                        <span className="text-sm sm:text-base font-medium">
-                          What is the dashboard, and what can I do there?
-                        </span>
-                      </div>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className="lucide lucide-chevron-down h-4 w-4 shrink-0 transition-transform duration-200"
-                      >
-                        <path d="m6 9 6 6 6-6"></path>
-                      </svg>
-                    </button>
-                  </h3>
-                  <div
-                    data-state="closed"
-                    id="radix-:r4i:"
-                    role="region"
-                    aria-labelledby="radix-:r4h:"
-                    data-orientation="vertical"
-                    className="overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
-                    style={{
-                      "--radix-accordion-content-height":
-                        "var(--radix-collapsible-content-height)",
-                      "--radix-accordion-content-width":
-                        "var(--radix-collapsible-content-width)",
-                      "--radix-collapsible-content-height":
-                        "96.00000762939453px",
-                      "--radix-collapsible-content-width":
-                        "1240.683349609375px",
-                    }}
-                    hidden
-                  ></div>
-                </div>
-                {/* Repeat similar structure for other collapsible items */}
-              </div>
-            </div>
-          </div>
-        </div>
+      <div>
+        <FrequentQuestion faqData={faqData}></FrequentQuestion>
       </div>
       <CTA></CTA>
       <Footer></Footer>
